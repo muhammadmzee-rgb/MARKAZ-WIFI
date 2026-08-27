@@ -1,1 +1,30 @@
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,Arial,sans-serif;background:#09111f;color:#eef4ff}button,input,select{font:inherit}.shell{display:flex;min-height:100vh}aside{width:280px;background:#101a2b;border-right:1px solid #24344d;padding:26px 14px;display:flex;flex-direction:column}.brand{font-size:29px;font-weight:900;color:#18d66b;letter-spacing:.5px}.subbrand{color:#8092ad;font-size:12px;margin:4px 0 25px 2px}nav{display:flex;flex-direction:column;gap:7px}nav button,.logout{background:none;border:0;color:#c8d4e8;text-align:left;padding:14px 15px;border-radius:11px;cursor:pointer;font-size:15px}nav button:hover,nav button.active{background:#1f2d42;color:#fff}nav button span{width:28px;display:inline-block}.logout{margin-top:auto;color:#9eacc0;border-top:1px solid #24344d;border-radius:0;padding-top:20px}main{flex:1}header{height:92px;border-bottom:1px solid #24344d;padding:18px 36px;display:flex;align-items:center;justify-content:space-between}header h1{margin:0;font-size:22px}header p{margin:5px 0 0;color:#71839f;font-size:13px}.status{font-size:13px;color:#8da0ba}.status i{display:inline-block;width:9px;height:9px;background:#16d46a;border-radius:50%;margin-right:8px}section{padding:34px;max-width:1400px}.hero{background:linear-gradient(135deg,#121f34,#0e1728);border:1px solid #2b3b55;border-radius:18px;padding:28px;display:flex;align-items:center;justify-content:space-between}.hero h2{font-size:30px;margin:12px 0 7px}.hero p{color:#91a3bd}.pill{background:#0e6c3d;color:#69f2a7;border-radius:30px;padding:6px 11px;font-size:11px;font-weight:800}.primary{background:#13c967;color:#06130c;border:0;border-radius:9px;padding:12px 18px;font-weight:800;cursor:pointer}.primary:hover{background:#1be078}.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin:18px 0}.stat{background:#111d30;border:1px solid #263750;border-radius:14px;padding:18px;display:flex;gap:12px;align-items:center}.stat>span{font-size:22px}.stat b{display:block;font-size:23px}.stat small{color:#8193ad}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:#101b2d;border:1px solid #263750;border-radius:16px;padding:24px;margin-bottom:18px}.panel h2,.panel h3{margin:0 0 8px}.panel p{color:#8395af}.big{font-size:34px;font-weight:900;margin:25px 0 3px}.row{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid #25344b;color:#a9b8cd}.green{color:#38e58b}.empty{padding:32px 10px;color:#657892;text-align:center;border:1px dashed #2a3b55;border-radius:10px;margin-top:15px}.formgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr auto;gap:10px;margin-top:20px}.formgrid input,.formgrid select{background:#0a1422;color:#e8f0fc;border:1px solid #334761;border-radius:9px;padding:12px}.tableHead{display:flex;justify-content:space-between;align-items:center}.tableHead span{color:#71849f}.tr{display:grid;grid-template-columns:1.5fr 1fr 1fr;padding:15px 5px;border-bottom:1px solid #263750}.loginWrap{min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 50% 25%,#17283e,#070e19 60%)}.loginCard{width:390px;background:#111c2b;border:1px solid #2b3d57;border-radius:18px;padding:34px;box-shadow:0 20px 70px #0007;text-align:center}.loginLogo .wifi{font-size:55px;color:#18d66b;line-height:1}.loginLogo b{font-size:30px;display:block;margin-top:8px}.loginLogo em{color:#18d66b;font-style:normal}.loginCard h2{margin:28px 0 4px}.loginCard p{color:#8294ad;margin:0 0 22px}.loginCard input{display:block;width:100%;margin:10px 0;background:#0a1421;border:1px solid #30435d;color:white;border-radius:9px;padding:13px}.loginCard .primary{width:100%;margin-top:10px}.loginCard small{display:block;color:#657791;margin-top:18px}.error{margin-top:14px;color:#ff8f8f;font-size:13px}.toast{position:fixed;right:25px;bottom:25px;background:#183b2a;border:1px solid #28784e;color:#8ff0b8;padding:14px 18px;border-radius:10px}@media(max-width:1000px){aside{width:220px}.stats{grid-template-columns:repeat(3,1fr)}.grid2{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr 1fr}}@media(max-width:650px){aside{display:none}section{padding:18px}.stats{grid-template-columns:1fr 1fr}.hero{display:block}.hero .primary{margin-top:15px}.loginCard{width:calc(100% - 30px)}}
+@import "tailwindcss";
+
+:root {
+  --background: #0b1120;
+  --foreground: #eef4ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
