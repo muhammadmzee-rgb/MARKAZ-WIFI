@@ -1,3 +1,3 @@
-import "./globals.css";
-export const metadata={title:"MARKAZ WIFI",description:"MARKAZ WIFI Billing Management"};
-export default function RootLayout({children}){return <html lang="en"><body>{children}</body></html>}
+import './globals.css';
+export const metadata={title:'MARKAZ WIFI',description:'MARKAZ WIFI SaaS - MikroTik Hotspot, Voucher and Billing Management System'};
+export default function RootLayout({children}){return <html lang="sw"><body>{children}</body></html>}
